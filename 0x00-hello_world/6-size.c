@@ -2,7 +2,7 @@
 /**
  * main - Prints sized of characters
  *
- * Return - returns a 0
+ * Return: Always returns 0 (success)
  */
 int main(void)
 {
