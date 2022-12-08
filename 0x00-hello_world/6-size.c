@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - for printing size of characters
+ * main - Prints sized of characters
  *
  * Return - returns a 0
  */
