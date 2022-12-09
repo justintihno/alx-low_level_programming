@@ -3,7 +3,11 @@
 /* more headers goes there*/
 
 #include <stdio.h>
-/* printf - prints value of n with apropriate message */
+/**
+ * main - entry point
+ * Description: prints value of n with apropriate message
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
@@ -20,7 +24,7 @@ int main(void)
 	}
 	else
 	{
-		printf("%d is zero\n", n); 
+		printf("%d is zero\n", n);
 	}
 	return (0);
 }
