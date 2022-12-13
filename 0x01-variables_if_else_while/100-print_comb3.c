@@ -20,10 +20,10 @@ int main(void)
 			putchar(j + '0');
 			putchar(',');
 			if (j < 9)
-				{
+			{
 				putchar(' ');
-				}
-			else
+			}
+			else if (i < 9)
 			{
 				putchar('\n');
 			}
