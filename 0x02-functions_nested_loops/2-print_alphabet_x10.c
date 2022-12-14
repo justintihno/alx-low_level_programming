@@ -1,15 +1,17 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet_x10 - Entry point
  * Description: prints the alphabet in lowercase 10 times
  * Return: Always 0 (success)
  */
-int main(void)
 
+void print_alphabet_x10(void)
 {
 	char x;
 	int y;
+
 	for (y = 0; y < 10; y++)
 	{
 		for (x = 'a'; x <= 'z'; x++)
@@ -18,5 +20,4 @@ int main(void)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
