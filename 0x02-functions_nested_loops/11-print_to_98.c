@@ -1,8 +1,12 @@
 #include<stdio.h>
+#include "main.h"
 
 /**
- * Prints the numbers from n to 98, either in ascending or descending order depending on the value of n.
- * If n is greater than 98, the numbers are printed in descending order. If n is less than 98, the numbers are printed in ascending order.
+ * print_to_98 Prints the numbers from n to 98
+ * either in ascending or descending order
+ * depending on the value of n.
+ * If n is greater than 98, the numbers are printed in descending order.
+ * If n is less than 98, the numbers are printed in ascending order.
  * @param n: The number from which to start printing the numbers.
  * @return void
  */
