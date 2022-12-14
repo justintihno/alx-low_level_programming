@@ -24,11 +24,17 @@ void times_table(void)
 	if (tens > 0)
 	{
 		_putchar(tens + '0');
+		_putchar(' ');
+	}
+	else
+	{
+		 _putchar(' ');
+		 _putchar(' ');
 	}
 		_putchar(ones + '0');
 		_putchar(',');
-		 _putchar(' ');
+	       	_putchar(' ');
 	}
-		_putchar('\n');
+	_putchar('\n');
 	}
 }
