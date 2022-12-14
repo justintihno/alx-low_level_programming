@@ -3,11 +3,8 @@
 
 /**
  * print_to_98 Prints the numbers from n to 98
- * either in ascending or descending order
- * depending on the value of n.
- * If n is greater than 98, the numbers are printed in descending order.
- * If n is less than 98, the numbers are printed in ascending order.
- * @param n: The number from which to start printing the numbers.
+ * Description: prints all natural number from n - 98
+ * @n - starting integer
  * @return void
  */
 
@@ -26,7 +23,7 @@ void print_to_98(int n)
 			}
 		}
 	}
-	else 
+	else
 	{
 		for (i = n; i <= 98; i++)
 		{
