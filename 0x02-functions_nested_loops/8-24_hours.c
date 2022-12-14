@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- * jack_bauerPrints every hour and minute in a day
+ * jack_bauer - Prints every hour and minute in a day
  * in the format "HH:MM", with each hour and minute on a new line.
+ * Description: prints every minute of the day
  * @param None
  * @return void
  */
