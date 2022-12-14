@@ -7,7 +7,7 @@
  * return void
  */
 
-void times_table(void);
+void times_table(void)
 {
 	int i, tens, ones;
 
