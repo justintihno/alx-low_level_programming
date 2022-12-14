@@ -9,31 +9,26 @@
 
 void times_table(void)
 {
-	int i, tens, ones;
-
+	int i, j, tens, ones, result;
+	
 	for (i = 0; i <= 9; i++)
 	{
-		tens = i / 10;
-		ones = i % 10;
-		if (tens > 0)
-		{
-			_putchar(tens + '0');
-		}
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
+	for (j = 0; j <= 9; j++)
+	{
+		result = i * j;
+		tens = result / 10;
+		ones = result % 10;
+	if (tens > 0)
+	{
+		_putchar(tens + '0');
+	}
 		_putchar(ones + '0');
-		_putchar(' ');
-		_putchar('x');
-		_putchar(' ');
-		_putchar('9');
-		_putchar(' ');
-		_putchar('=');
-		_putchar(' ');
-		tens = (i * 9) / 10;
-		ones = (i * 9) % 10;
-		if (tens > 0)
-		{
-			_putchar(tens + '0');
-		}
-		_putchar(ones + '0');
+		_putchar(',');
+		 _putchar(' ');
+	}
 		_putchar('\n');
 	}
 }
