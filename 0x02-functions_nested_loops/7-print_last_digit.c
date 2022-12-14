@@ -8,7 +8,7 @@
  * Return: the last digit of the input number
  */
 
-int print_last_digit(int n)
+int print_last_digit(int)
 {
 	int last_digit = n % 10;
 	_putchar('0' + last_digit);
