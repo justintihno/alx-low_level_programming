@@ -3,9 +3,11 @@
 
 /**
  * print_sign - entry point prints the sign of a number
- * Description: prints the sign of a number and returns 1 if the number is positive, 0 if it is zero, and -1 if it is negative
+ * Description: prints the sign of a number and
+ * returns 1 if the number is +, 0 if it is 0,
+ * and -1 if it is -
  * @n: variable
- * Return: 1 if n is greater than zero, 0 if n is zero, -1 if n is less than zero
+ * Return: 1 if n > 0, 0 if n = 0, -1 if n < 0
  */
 
 int print_sign(int n)
