@@ -1,11 +1,14 @@
 #include <stdlib>
+#include <stdio.h>
 #include "main.h"
 
 /**
- * fizzbuzz - prints the numbers from 1 to 100, followed by a new line
+ * main - fizzbuzz prints the numbers from 1 to 100
+ * followed by a new line
+ * Return: void
  */
 
-void fizzbuzz(void)
+int main(void)
 {
 	int i;
 
