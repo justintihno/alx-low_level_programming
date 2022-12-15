@@ -13,27 +13,30 @@ void times_table(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		_putchar('0');
-		_putchar(',');
-		_putchar(' ');
-	for (j = 1; j <= 9; j++)
-	{
-		result = i * j;
-		tens = result / 10;
-		ones = result % 10;
-	if (tens > 0)
-	{
-		_putchar(tens + '0');
-		_putchar(ones + '0');
-	}
-	else
-	{
-		_putchar(ones + '0');
-	}
-		_putchar(',');
-		_putchar(' ');
-
-	}
-	_putchar('\n');
+		for (j = 1; j <= 9; j++)
+		{
+			result = i * j;
+			tens = result / 10;
+			ones = result % 10;
+			if (j == 0)
+			{
+				_putchar('0');
+			}
+			else if (result < 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(ones + '0');
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(tens + '0');
+				_putchar(ones + '0');
+			}
+		}
+		_putchar('\n');
 	}
 }
