@@ -5,7 +5,7 @@
  * except for 2 and 4
  * Description: prints
  * Return: void
- * /
+ */
 
 void print_most_numbers(void)
 {
