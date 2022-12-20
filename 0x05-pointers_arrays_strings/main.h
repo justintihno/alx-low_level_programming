@@ -1,11 +1,15 @@
 #ifndef MAIN_H
 #define MAIN_H
-// Prototypes for ALX code
+/**
+ * Prototypes for ALX code
+ * Low-level programming & Algorithm - Hatching out 
+ */
 
-// Low-level programming & Algorithm - Hatching out 
 int _putchar(char c);
 
-// 0x04. C - More functions, more nested loops
+/**
+ * 0x04. C - More functions, more nested loops
+ */
 int _isupper(int c);                                     int _isdigit(int c);
 int mul(int a, int b);
 void print_numbers(void);
@@ -16,7 +20,9 @@ void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
 
-// 0x05. C - Pointers, arrays and strings
+/**
+ * 0x05. C - Pointers, arrays and strings
+ */
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);

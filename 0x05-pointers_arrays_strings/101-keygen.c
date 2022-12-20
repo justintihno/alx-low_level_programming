@@ -10,7 +10,8 @@
 
 int main(void)
 {
-	int n, char c;
+	int n;
+	char c;
 
 	srand(time(NULL));
 	while (n <= 3125)
@@ -19,6 +20,6 @@ int main(void)
 		n += c;
 		putchar(c);
 	}
-	putchar(1286 - sum);
+	putchar(1286 - n);
 	return (0);
 }
