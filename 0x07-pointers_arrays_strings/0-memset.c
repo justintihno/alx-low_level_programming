@@ -14,6 +14,8 @@ void *_memset(void *s, int b, unsigned int n)
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
-	p[i] = b;
+	{
+		p[i] = b;
+	}
 	return (s);
 }
