@@ -11,14 +11,20 @@ char *_strchr(char *s, char c)
 {
 	char *result = (char *)0;
 
-	while (*s)
+	while (*s!='\0')
 	{
 		if (*s == c)
 		{
-			result = s;
-			break;
+			return (s);
 		}
 		s++;
 	}
-	return (result);
+	if (c == '\0')
+	{
+		return (s);
+	}
+	else
+	{
+	return ('\0');
+	}
 }
