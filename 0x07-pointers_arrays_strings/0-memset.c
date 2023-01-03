@@ -12,7 +12,7 @@ void *_memset(void *s, int b, unsigned int n)
 {
 	unsigned int i;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n; i++, n--)
 	{
 		s[i] = b;
 	}
