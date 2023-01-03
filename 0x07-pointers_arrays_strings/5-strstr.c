@@ -2,7 +2,7 @@
 
 /**
  * _strstr - locate a substring
- * _strstr - locate a substring
+ * @haystack: The string to be searched
  * @needle: substring to search for
  * Return: pointer to the first occurrence of needle in haystack, or NULL if needle is not found
  */
