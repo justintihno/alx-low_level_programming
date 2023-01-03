@@ -11,6 +11,8 @@
 void *_memset(void *s, int b, unsigned int n)
 {
 	unsigned char *p = s;
+
+	while (n--)
 	*p++ = b;
 	return (s);
 }
