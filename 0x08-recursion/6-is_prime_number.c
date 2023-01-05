@@ -25,7 +25,8 @@ int is_divisible(int n, int d)
 
 int is_prime_number(int n)
 {
-	int d =2;
+	int d = 2;
+
 	if (n <= 1)
 		return (0);
 	if (n >= 2 && n <= 3)
