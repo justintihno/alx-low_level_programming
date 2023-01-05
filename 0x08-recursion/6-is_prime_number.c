@@ -1,34 +1,34 @@
 #include "main.h"
 
 /**
- * is_prime_number - determine if a number is a prime number
- * @n: the number to determine if is a prime number
- * Return: 1 if the input integer is a prime number, otherwise return 0
+ * is_divisible - Checks if a number is divisible.
+ * @n: The number to be checked.
+ * @d: divisor
+ *
+ * Return: If the number is divisible - 0. if the number is not divisible - 1
+ */
+
+int is_divisible(int n, int d)
+{
+	if (n % d == 0)
+		return (0);
+	if (d == n / 2)
+		return (1);
+	return (is_divisible(n, d + 1));
+}
+
+/**
+ * is_prime_number - Checks if a number is prime.
+ * @n: The number to be checked.
+ * Return: If the integer is not prime - 0  If the number is prime - 1.
  */
 
 int is_prime_number(int n)
 {
+	int d =2;
 	if (n <= 1)
 		return (0);
-	if (n <= 3)
+	if (n >= 2 && n <= 3)
 		return (1);
-	if (n % 2 == 0 || n % 3 == 0)
-		return (0);
-	return (is_prime_number_helper(n, 5));
-}
-
-/**
- * is_prime_number_helper - checks if a number is prime, helper function
- * @n: number to check
- * @i: current divisor to check
- * Return: 1 if n is prime, 0 if n is not prime
- */
-
-int is_prime_number_helper(int n, int i)
-{
-	if (i * i > n)
-		return (1);
-	if (n % i == 0 || n % (i + 2) == 0)
-		return (0);
-	return (is_prime_number_helper(n, i + 6));
+	return (is_divisible(n, div));
 }
