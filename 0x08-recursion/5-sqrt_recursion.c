@@ -6,9 +6,13 @@
  * Return: -1 if there is no natural square root
  */
 
-int _sqrt_recursion(int n)
+int _find_sqrt(int n, int i)
 {
-	return (_find_sqrt(n, 1));
+	if (i * i == n)
+		return (i);
+	if (i * i > n)
+		return (-1);
+	return (_find_sqrt(n, i + 1));
 }
 
 /**
@@ -18,12 +22,9 @@ int _sqrt_recursion(int n)
  * Return: natural square root of n, or -1 if not found
  */
 
-int _find_sqrt(int n, int i)
+int _sqrt_recursion(int n)
 {
-	if (i * i == n)
-		return (i);
-	else if (i * i > n)
-		return(- 1);
-	else
-		return (_find_sqrt(n, i + 1));
+	if (n < 0)
+		return (-1);
+	return (_find_sqrt(n, 1));
 }
