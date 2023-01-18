@@ -1,10 +1,8 @@
 #ifndef SUM_H
 #define SUM_H
-
 /**
- * SUM - finds the sum of x and y
- * @x, @y: The numbers to be summed
+ * Desc: Header file that defines a function-like macro SUM(x, y)
+ * that computes sum of x and y
  */
-
 #define SUM(x,y) ((x) + (y))
 #endif
