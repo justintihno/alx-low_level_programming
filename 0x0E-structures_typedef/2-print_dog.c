@@ -3,11 +3,8 @@
 #include "dog.h"
 
 /**
- * print_dog - prints astruct dog
- * @d: to be initialized
- * @name: name of dog
- * @age: age of dog
- * @owner: owner of dog
+ * print_dog - Prints a struct dog.
+ * @d: The struct dog to be printed.
  */
 
 void print_dog(struct dog *d)
