@@ -3,6 +3,7 @@
 
 /**
  * print_list - function that prints all the elements of a linked list_t list
+ * struct list_s - singly linked list
  * @h: pointer to head node of linked list
  * Return: number of nodes in the linked list
  */
