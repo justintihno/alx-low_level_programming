@@ -7,10 +7,10 @@ global _start
 
 _start:
 ; print the string
-mov rxg 13 ; message length
+mov rdx 13 ; message length
 mov rcx, hello ; message to write
 mov rbx, 1 ; file descriptor (stdout)
-mov rax, 4 ; system call number (sys_write)
+mov rax, 1 ; system call number (sys_write)
 syscall
 
 ; print a newline
