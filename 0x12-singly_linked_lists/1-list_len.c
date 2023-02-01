@@ -4,7 +4,6 @@
  * list_len - finds number of elements
  * in a linked list
  * @h: linked list_t list
- * @elements: a counter variable for size_t
  * Return: number of elements in h
  */
 
