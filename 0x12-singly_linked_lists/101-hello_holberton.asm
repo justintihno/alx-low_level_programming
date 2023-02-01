@@ -1,26 +1,21 @@
+extern printf
+
 section .text
-global _start
+global main
 
-_start:
-; print the string
-mov rdx 14 ; message length
-mov rcx, msg ; message to write
-mov rbx, 1 ; file descriptor (stdout)
-mov rax, 1 ; system call number (sys_write)
-syscall
+main:
+push rbp
 
-; print a newline
-mov rdx, 1 ; message length
-mov rcx, newline ; message to write
-mov rbx, 1 ; file descriptor (stdout)
-mov rax, 1 ; system call number (sys_write)
-syscall
+mov rdi,fmt
+mov rsi,msg
+mov rax,0
+call printf
 
-; exit the program
-mov rax, 60 ; system call number (sys_exit)
-xor rdi, rdi ; exit code (0)
-syscall
+pop rbp
+
+mov rax,0
+ret
 
 section .data
-msg db 'Hello, Holberton', 0
-newline db 10, 0
+msg: db "Hello, Holberton", 0
+fmt: db "%s", 10, 0
