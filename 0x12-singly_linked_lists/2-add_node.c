@@ -10,7 +10,7 @@
  * 		- address new elelment
  */
 
-list_t *add_node(list_t **head, const ca=har *str)
+list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
 	char *dup_str;
