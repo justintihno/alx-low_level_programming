@@ -2,8 +2,11 @@
 #define MAIN_H
 
 /**
-* Description: header file for all the prototypes for 0x14-bit_manipulation
-*/
+ * Description: header file for all the prototypes for 0x14-bit_manipulation
+ * @c: The character to print
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
