@@ -2,7 +2,7 @@
 #define MAIN_H
 
 /**
-header file for all the prototypes for 0x14-bit_manipulation
+* header file for all the prototypes for 0x14-bit_manipulation
 */
 
 int _putchar(char c);
