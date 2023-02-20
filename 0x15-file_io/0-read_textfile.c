@@ -1,52 +1,47 @@
 #include "main.h"
 
 /**
-* read_textfile - reads a text file and prints it to the POSIX standard output
-* @filename: the name of the file to read
-* @letters: the number of letters to read and print
-* Return: the actual number of letters read and printed, or 0 on failure
-*/
+ * read_textfile - reads a text file and prints it.
+ *
+ * @filename: const char type pointer to file to be read
+ *
+ * @letters: size_t type
+ *
+ * Return: 0
+ */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    FILE *fp;
-    char *buffer;
-    ssize_t bytes_written;
-    size_t bytes_read;
+	int fp;
+	ssize_t fpRead, fpWrite, fpClose;
+	char *lineBuffer;
 
-    if (filename == NULL) {
-        return (0);
-    }
+	if (filename == NULL)
+		return (0);
 
-    fp = fopen(filename, "r");
-    if (fp == NULL) {
-        return (0);
-    }
+	lineBuffer = malloc(sizeof(char) * letters);
 
-    buffer = (char *)malloc(sizeof(char) * (letters + 1));
-    if (buffer == NULL) {
-        fclose(fp);
-        return (0);
-    }
+	if (lineBuffer == NULL)
+		return (-1);
 
-    bytes_read = fread(buffer, sizeof(char), letters, fp);
-    if (bytes_read == 0) {
-        fclose(fp);
-        free(buffer);
-        return (0);
-    }
+	fp = open(filename, O_RDONLY);
 
-    buffer[bytes_read] = '\0';
+	if (fp == -1)
+		return (0);
 
-    bytes_written = write(1, buffer, bytes_read);
-    if (bytes_written < 0 || (size_t)bytes_written != bytes_read) {
-        fclose(fp);
-        free(buffer);
-        return (0);
-    }
+	fpRead = read(fp, lineBuffer, letters);
 
-    fclose(fp);
-    free(buffer);
-    return (bytes_read);
+	if (fpRead == -1)
+		return (-1);
+
+	fpWrite = write(STDOUT_FILENO, lineBuffer, fpRead);
+
+	if (fpWrite == -1)
+		return (-1);
+	fpClose = close(fp);
+
+	if (fpClose == -1)
+		return (-1);
+
+	return (fpRead);
 }
-
